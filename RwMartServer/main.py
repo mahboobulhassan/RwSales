@@ -22,7 +22,7 @@ st.markdown("""
 def main():
     col1, col2, col3 = st.columns([17,5,78])
     with col1:
-        st.image('rw.jpg', width=150)
+        st.image('assets/images/rw.jpg', width=150)
     with col3:
         st.markdown("<h1 style='font-family:BROADWAY;color:#b62f2f'>RIGHTWAY WHOLESALE</h1>",unsafe_allow_html=True)
     
@@ -108,8 +108,6 @@ def main():
             except:
                 st.write('Current and previous years should not be same')
             
-            # st.markdown("#### :blue[Weekly Product Sale Analysis]")
-            # heading=f"<h5 style="color:blue">Weekly Product Sale During {currentYear}</h5>"
             st.markdown(f"<h4 style='color:green'>Weekly Product Sale During {currentYear}</h4>",unsafe_allow_html=True)
             dfa=df[(df['Description']==selected_product)&(df['year']==currentYear)]
             
