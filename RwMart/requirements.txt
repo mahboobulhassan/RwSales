@@ -1,9 +1,0 @@
-streamlit
-streamlit_option_menu
-pandas
-numpy
-matplotlib
-plotly
-seaborn
-pyodbc
-sqlalchemy
