@@ -1,4 +1,4 @@
-import streamlit as st, pandas as pd
+import streamlit as st, pandas as pd, os
 from data import data_prep, product_data,supplier_data,category_data,op_data,department_data
 from max_chart import products_chart,op_chart,supplier_chart,category_chart,department_chart
 from chart import product_chart,prod_chart,productWeeklyChart
@@ -15,14 +15,17 @@ st.markdown("""
           
         </style>        
     """,
-    unsafe_allow_html=True)  
+    unsafe_allow_html=True)
+# get current path
+current_dir=os.path.dirname(os.path.abspath(__file__)) 
+image_path=os.path.join(current_dir,'assets/images/rw.jpg') 
 
 
 # Define the main function
 def main():
     col1, col2, col3 = st.columns([17,5,78])
     with col1:
-        st.image('assets/images/rw.jpg', width=150)
+        st.image(image_path, width=150)
     with col3:
         st.markdown("<h1 style='font-family:BROADWAY;color:#b62f2f'>RIGHTWAY WHOLESALE</h1>",unsafe_allow_html=True)
     
