@@ -47,8 +47,8 @@ def LoadData():
                     
             except:
                 st.error('Please enter valid DATES') 
-        except:
-            st.error('Please enter valid server name')   
+        except Exception as e:
+            st.error('Please enter valid server name',e)   
     
         
             
