@@ -1,7 +1,5 @@
 import pandas as pd,numpy as np
 
-
-
 def data_prep(dfa):
     dfa.rename(columns={'Date_':'Date'},inplace=True)
     dfa['Date']=pd.to_datetime(dfa['Date'],format='mixed')

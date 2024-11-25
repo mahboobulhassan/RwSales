@@ -32,8 +32,8 @@ def progressBar():
 
 # Define the main function
 def LoadData():
-    
-    server = st.sidebar.text_input('Enter server name')
+    sList=['DESKTOP-QEH9V2R\SQLEXPRESS','192.168.1.200']    
+    server = st.sidebar.selectbox('Select server name',sList)
     
     if server:
         try:

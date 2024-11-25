@@ -11,7 +11,7 @@ st.set_page_config(page_title="RW Sale", layout="wide")
 
 st.markdown("""
         <style>
-            .block-container{padding-top: 12px;}
+            .block-container{padding-top: 35px;}
           
         </style>        
     """,
